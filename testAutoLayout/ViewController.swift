@@ -47,13 +47,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if txtViewNbChat.text == "" {
             var nouvelleVille = Ville(nb: txtViewNbHabitant.text.toInt()!,nbMaison: txtViewNbHabitant.text.toInt()!,nomMaire: txtViewNomVille.text)
             lblResultat.text = "nouvelle ville créer"
-            self.TableCreer!.reloadData()
+            tableauPays.append(nouvelleVille)
         }else{
-            var nouvelleCommuune = Commune(nb: txtViewNbHabitant.text.toInt()!, nbMaison: txtViewNbHabitant.text.toInt()!, nomMaire: txtViewNomVille.text, nbChat: txtViewNbChat.text.toInt()!)
+            var nouvelleCommune = Commune(nb: txtViewNbHabitant.text.toInt()!, nbMaison: txtViewNbHabitant.text.toInt()!, nomMaire: txtViewNomVille.text, nbChat: txtViewNbChat.text.toInt()!)
             lblResultat.text = "nouvelle commune créer"
-            self.TableCreer!.reloadData()
-            
+            tableauPays.append(nouvelleCommune)
         }
+        self.TableCreer!.reloadData()
     }
 
 }
