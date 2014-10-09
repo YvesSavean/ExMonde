@@ -13,6 +13,8 @@
 		5EFDFF5619E67C54004B939D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFDFF5519E67C54004B939D /* Images.xcassets */; };
 		5EFDFF5919E67C54004B939D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EFDFF5719E67C54004B939D /* LaunchScreen.xib */; };
 		5EFDFF6519E67C54004B939D /* testAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFF6419E67C54004B939D /* testAutoLayoutTests.swift */; };
+		5EFDFF6F19E68897004B939D /* Ville.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFF6E19E68897004B939D /* Ville.swift */; };
+		5EFDFF7119E68C62004B939D /* commune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFF7019E68C62004B939D /* commune.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5EFDFF5E19E67C54004B939D /* testAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFDFF6319E67C54004B939D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EFDFF6419E67C54004B939D /* testAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAutoLayoutTests.swift; sourceTree = "<group>"; };
+		5EFDFF6E19E68897004B939D /* Ville.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ville.swift; path = ../Ville.swift; sourceTree = "<group>"; };
+		5EFDFF7019E68C62004B939D /* commune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commune.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		5EFDFF4B19E67C54004B939D /* testAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				5EFDFF7019E68C62004B939D /* commune.swift */,
+				5EFDFF6E19E68897004B939D /* Ville.swift */,
 				5EFDFF4E19E67C54004B939D /* AppDelegate.swift */,
 				5EFDFF5019E67C54004B939D /* ViewController.swift */,
 				5EFDFF5219E67C54004B939D /* Main.storyboard */,
@@ -212,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFDFF7119E68C62004B939D /* commune.swift in Sources */,
+				5EFDFF6F19E68897004B939D /* Ville.swift in Sources */,
 				5EFDFF5119E67C54004B939D /* ViewController.swift in Sources */,
 				5EFDFF4F19E67C54004B939D /* AppDelegate.swift in Sources */,
 			);
@@ -336,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testAutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testAutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
